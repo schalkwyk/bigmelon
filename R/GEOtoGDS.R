@@ -26,7 +26,7 @@ geotogds <- function(geo, gds=NULL, method = "wget", keepidat = F, keeptar = F, 
     barsgz <- dir(dest, recursive = TRUE)[grepl(".idat.gz", dir(dest, recursive = TRUE))]
     message('Unpacking %s .idat files', length(barsgz))
     for(z in barsgz){
-        GEOquery::gunzip(filename = paste0(dest, "/", z), destname = paste0(dest, "/", gsub(x = z, pattern = ".gz", replacement='')), remove = TRUE)
+        R.utils::gunzip(filename = paste0(dest, "/", z), destname = paste0(dest, "/", gsub(x = z, pattern = ".gz", replacement='')), remove = TRUE)
     }
     # if(tidy){
     message('Removing packed files!')

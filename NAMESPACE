@@ -11,6 +11,7 @@ importFrom('stats', 'approx', 'coef', 'density', 'fivenum', 'lm',
     'median', 'na.omit', 'sd', 'quantile', 'kmeans', 'prcomp')
 importFrom('utils', 'data', 'file_test', 'packageVersion','untar', 'download.file', 'write.csv', 'packageDescription')
 importFrom('GEOquery', 'getGEO')
+importFrom('R.utils', 'gunzip')
 importFrom('graphics', 'legend', 'plot', 'par')
 importFrom('BiocGenerics', 'rownames')
 importFrom('illuminaio', 'readIDAT')
